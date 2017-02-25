@@ -91,6 +91,12 @@ namespace ProjetoFinal.Controllers
             }
         }
 
+        //GET: /LogOut/
+        public ActionResult LogOut()
+        {
+            return View();
+        }
+
         //
         // GET: /Account/VerifyCode
         [AllowAnonymous]
@@ -103,6 +109,9 @@ namespace ProjetoFinal.Controllers
             }
             return View(new VerifyCodeViewModel { Provider = provider, ReturnUrl = returnUrl, RememberMe = rememberMe });
         }
+
+
+        
 
         //
         // POST: /Account/VerifyCode
