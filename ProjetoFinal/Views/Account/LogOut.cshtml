@@ -3,5 +3,15 @@
     ViewBag.Title = "LogOut";
 }
 
-<h2>LogOut</h2>
+<h2>Log Out for page</h2>
 
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <table>
+        <tr>
+            <td>
+                @Html.ActionLink("Index", "Home")
+            </td>
+        </tr>
+    </table>
+}
